@@ -1,0 +1,204 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {/* style.css */
+
+/* Estilo general del body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Contenedor principal centrado */
+.container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Título */
+.container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Estilo del formulario */
+#formRegistro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cada grupo label+input */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo de la etiqueta (label) */
+.form-group label {
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Estilo de los inputs */
+.form-group input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Cambia el borde del input al enfocarse */
+.form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Estilo del botón de submit */
+#formRegistro button[type="submit"] {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover del botón */
+#formRegistro button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Botón deshabilitado */
+#formRegistro button[disabled] {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Feedback (mensajes de éxito/error) */
+#feedback {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+/* Mensaje de éxito: fondo verde claro */
+#feedback.exito {
+  background-color: #e6ffea;
+  border: 1px solid #2ecc71;
+  color: #2ecc71;
+}
+
+/* Mensaje de error: fondo rojo claro */
+#feedback.error {
+  background-color: #ffe6e6;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+}
+
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #3178c6aa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
