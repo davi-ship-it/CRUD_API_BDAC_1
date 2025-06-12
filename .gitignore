@@ -1,0 +1,13 @@
+# Dependencias del Backend y Frontend (ignora cualquier carpeta node_modules)
+node_modules/
+
+# Archivos de entorno con secretos (nunca los subas)
+.env
+
+# Archivos de compilación o builds
+dist/
+build/
+
+# Logs y archivos de caché
+*.log
+.DS_Store
